@@ -1,0 +1,124 @@
+/* Additional utility classes */
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .md-grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .md-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Table styles */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.custom-table thead th {
+  background-color: var(--primary-light);
+  font-weight: 600;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f1f1f1;
+} 
