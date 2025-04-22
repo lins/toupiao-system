@@ -33,7 +33,7 @@
 4. 自动处理日志和进程管理
 
 启动后可以访问:
-- 前端界面: http://localhost:5173
+- 前端界面: http://localhost:3000
 - 后端API: http://localhost:3001
 
 按 Ctrl+C 可以同时停止前端和后端服务。

@@ -151,7 +151,7 @@ start_frontend
 echo ""
 print_info "服务已启动成功！"
 echo -e "${GREEN}----------------------------------------${NC}"
-echo -e "${GREEN}前端服务: http://localhost:5173${NC}"
+echo -e "${GREEN}前端服务: http://localhost:3000${NC}"
 echo -e "${GREEN}后端API: http://localhost:3001${NC}"
 echo -e "${GREEN}----------------------------------------${NC}"
 print_info "日志文件位于 logs/ 目录"
