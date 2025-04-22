@@ -1,5 +1,98 @@
-# Vue 3 + Vite
+# 投票系统 (Toupiao System)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+一个基于 Vue 3 和 SQLite 的投票评分系统。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 功能特点
+
+- 管理员可以添加、编辑和删除参赛队伍
+- 管理员可以管理评委账户
+- 管理员可以设置评分项目
+- 评委可以为各个队伍的不同项目进行评分
+- 系统自动计算并展示评分结果
+- 支持去掉最高分和最低分后计算平均分
+
+## 系统要求
+
+- Node.js 14.0 或更高版本
+- npm 6.0 或更高版本
+
+## 快速开始
+
+### 开发环境
+
+使用一键启动脚本运行开发环境:
+
+```bash
+./start.sh
+```
+
+该脚本会:
+1. 检查必要的依赖是否已安装
+2. 安装项目所需的npm包
+3. 同时启动前端开发服务器和后端API服务
+4. 自动处理日志和进程管理
+
+启动后可以访问:
+- 前端界面: http://localhost:5173
+- 后端API: http://localhost:3001
+
+按 Ctrl+C 可以同时停止前端和后端服务。
+
+### 生产环境部署
+
+使用部署脚本构建前端并启动生产环境:
+
+```bash
+./deploy.sh
+```
+
+该脚本会:
+1. 安装所有依赖
+2. 构建优化后的前端代码
+3. 配置后端服务器提供静态文件
+4. 启动单一服务器同时提供前端界面和API
+
+部署后可以通过 http://localhost:3001 访问应用。
+
+## 手动启动
+
+如果你不想使用脚本，也可以手动启动服务:
+
+### 安装依赖
+```bash
+npm install
+```
+
+### 开发环境
+```bash
+# 启动前端开发服务器
+npm run dev
+
+# 启动后端服务器 (在另一个终端)
+npm run server
+```
+
+### 生产环境
+```bash
+# 构建前端
+npm run build
+
+# 启动服务器
+npm run server
+```
+
+## 系统架构
+
+- 前端: Vue 3 + Vite + Element Plus
+- 状态管理: Pinia
+- 后端: Express.js
+- 数据库: SQLite 3
+
+## 默认账户
+
+- 管理员: 用户名 `admin`, 密码 `admin123`
+- 评委: 请通过管理员账户创建
+
+## 许可证
+
+[MIT](LICENSE)
